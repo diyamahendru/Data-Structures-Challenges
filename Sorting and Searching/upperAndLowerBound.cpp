@@ -1,3 +1,5 @@
+//Simple problem to find the lowr and uper bound of a number repeating using BINARY SEARCH.
+
 #include<iostream>
 
 using namespace std;
