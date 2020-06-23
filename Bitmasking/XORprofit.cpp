@@ -14,7 +14,7 @@ int main(){
         for(int j=1; j<=n-i; j++){
             int y = x+j;
             int xo = y^x;
-            cout<<xo<<endl;
+            //cout<<xo<<endl;
             xor_profit = max(xor_profit, xo);
         }
     }
