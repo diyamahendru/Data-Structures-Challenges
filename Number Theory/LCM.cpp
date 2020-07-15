@@ -14,9 +14,9 @@ int main(){
     int a, b;
     cin>>a>>b;
 
-    int g = gcd(a, b);
+    int gg = gcd(a, b);
 
-    int res = (a*b)/g;
+    int res = (a*b)/gg;
 
     cout<<res<<endl;
     return 0;

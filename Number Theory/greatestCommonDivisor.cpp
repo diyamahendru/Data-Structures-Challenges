@@ -18,5 +18,6 @@ int main(){
     int res = gcd(a, b);
 
     cout<<res<<endl;
+    
     return 0;
 }
