@@ -1,3 +1,4 @@
+//To count the number of strings of length N which have no consecutive 1s.
 #include<iostream>
 
 using namespace std;
