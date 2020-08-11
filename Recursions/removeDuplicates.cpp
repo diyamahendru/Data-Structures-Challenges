@@ -2,16 +2,21 @@
 
 using namespace std;
 
-void remove(char s[], int i){
-    if(s[i] == '\0')
+void remove(char *s, char *ss, int i, int j){
+    if(s[i] == '\0'){
+        ss[j] = '\0';
         return;
+    }
     if(s[i] == s[i+1]){
-        cout<<s[i];
-        remove(s, i+2);
+        while(s[i] == s[i+1]){
+            ss[j] = s[i];
+            i++;
+        }
+        remove(s, ss, i+1, j+1);
     }
     else{
-        cout<<s[i];
-        remove(s, i+1);
+        ss[j] = s[i];
+        remove(s, ss, i+1, j+1);
     }
 
 }
@@ -20,6 +25,10 @@ int main(){
 
     char s[1000];
     cin>>s;
-    remove(s, 0);
+    char ss[1000];
+
+    remove(s, ss, 0, 0);
+    cout<<ss<<endl;
+
     return 0;
 }
