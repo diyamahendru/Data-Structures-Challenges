@@ -1,3 +1,5 @@
+//This question is not done through backtracking rather it is done through subsets method.
+
 #include<bits/stdc++.h>
 using namespace std;
 
