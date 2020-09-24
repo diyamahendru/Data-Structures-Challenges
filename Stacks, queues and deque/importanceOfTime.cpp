@@ -6,18 +6,22 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
+
     queue<int> real;
     int ideal[n];
+
     for(int i=0; i<=n-1; i++){
-        int temp1;
-        cin>>temp1;
-        real.push(temp1);
+        int x;
+        cin>>x;
+        real.push(x);
     }
     for(int i=0; i<n; i++){
         cin>>ideal[i];
     }
+
     int time=0;
     int idx=0;
+    
     while(real.size()>0){
         if(ideal[idx]==real.front()){
             time++;
