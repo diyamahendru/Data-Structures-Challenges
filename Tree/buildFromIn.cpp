@@ -58,6 +58,7 @@ int main()
         }
         node *root = build(a, 0, n - 1);
         printPre(root);
+        cout<<endl;
     }
 
     return 0;
