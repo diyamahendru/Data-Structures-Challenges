@@ -51,7 +51,7 @@ void printPre(node *root){
     printPre(root->right);
 }
 
-void rightView(node *root, int &max, int curr){
+void leftView(node *root, int &max, int curr){
     if(root==NULL){
         return;
     }
@@ -61,8 +61,8 @@ void rightView(node *root, int &max, int curr){
         max=curr;
     }
 
-    rightView(root->right, max, curr+1);
-    rightView(root->left, max, curr+1);
+    leftView(root->left, max, curr+1);
+    leftView(root->right, max, curr+1);
 }
 
 int main(){
@@ -70,7 +70,7 @@ int main(){
     int max=-1;
 
     //printPre(root);
-    rightView(root, max, 0);
+    leftView(root, max, 0);
 
     return 0;
 }
