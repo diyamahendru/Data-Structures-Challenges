@@ -7,7 +7,7 @@ bool sorted(int a[], int n, int i){
         return true;
     }
     bool flag = false;
-    if(a[i]<a[i+1]){
+    if(a[i]<=a[i+1]){
         flag = sorted(a, n, i+1);
     }
     else{
